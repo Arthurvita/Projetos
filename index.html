@@ -4,61 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bem-vindo ao P7 Group - Nossos Sistemas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes bounce {
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            0%,
+            100%,
+            50%,
+            40%,
+            100% {
+                transform: translateY(0);
+            }
 
-    <link rel="stylesheet" href="style.css">
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .logo:hover {
+            animation: bounce 1s ease infinite;
+        }
+    </style>
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+    </script>
 </head>
 
 <body>
-    <main>
-        <div class="resume">
-            <div>
-                Entradas: R$
-                <span class="incomes">0.00</span>
-            </div>
-            <div>
-                Saidas: R$
-                <span class="expenses">0.00</span>
-            </div>
-            <div>
-                Total: R$
-                <span class="total">0.00</span>
-            </div>
-        </div>
-        <div class="newItem">
-            <div class="divDesc">
-                <label for="desc">Descrição</label>
-                <input type="text" id="desc" />
-            </div>
-            <div class="divAmount">
-                <label for="amount">Valor</label>
-                <input type="number" id="amount" />
-            </div>
-            <div class="divType">
-                <label for="type">Tipo</label>
-                <select id="type">
-                    <option>Entrada</option>
-                    <option>Saída</option>
-                </select>
-            </div>
-            <button id="btnNew">Incluir</button>
-        </div>
-        <div class="divTable">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Descrição</th>
-                        <th class="columnsAmount">Valor</th>
-                        <th class="columnsType">Tipo</th>
-                        <th class="columnsAction"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-    </main>
-    <script src="script.js"></script>
+    <div class="container">
+        <img class="p7-logo" src="Imgens/P7.png" alt="Logo da P7">
+        <h1>Bem-vindo ao P7 Group</h1>
+        <p>Nossos sistemas de consultoria:</p>
+        <ul>
+            <li>
+                <a href="https://www.sieg.com/" target="_blank">
+                    <img class="logo sieg-logo" src="imgens/sieg.png" alt="Logo SIEG">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.dominioweb.com.br/" target="_blank">
+                    <img class="logo dominio-logo" src="imgens/dominio.png" alt="Logo Domínio Web">
+                </a>
+            </li>
+            <li>
+                <a href="https://e-kontroll.com.br/" target="_blank">
+                    <img class="logo ekontroll-logo" src="imgens/ekontroll.png" alt="Logo E-kontroll">
+                </a>
+            </li>
+            <li>
+                <a href="https://cisassessment.com.br/painel/passaportes/visualizar/id/62689" target="_blank">
+                    <img class="logo cisassessment-logo" src="imgens/Cis.png" alt="Logo CISASSESSMENT">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.scisapp.com/" target="_blank">
+                    <img class="logo scisapp-logo" src="imgens/Scis.png" alt="Logo SCISAPP">
+                </a>
+            </li>
+            <li>
+                <a href="https://superlogica.net/clients/?callback=&licenca=dantascontab" target="_blank">
+                    <img class="logo superlogica-logo" src="imgens/superlogica.jpg" alt="Logo Superlogica">
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/spreadsheets/d/13stqldbAw-nvXSuLkwzvPOrc4Ym8zwpVzMuncY0zivU/edit#gid=1625701364"
+                    target="_blank">
+                    <img class="logo excel-logo" src="imgens/Excel.jpg" alt="Logo Excel">
+                </a>
+            </li>
+            <li>
+                <a href="https://radarsebrae.com.br/" target="_blank">
+                    <img class="logo radar-logo" src="imgens/radar.png" alt="Logo Radar">
+                </a>
+            </li>
+        </ul>
+        <p class="descricao">
+            A consultoria desempenha um papel crucial para empresários em diversas áreas-chave do negócio.
+            A análise de perfil comportamental, por exemplo, oferece insights valiosos sobre os pontos fortes e áreas
+            de desenvolvimento dos colaboradores, permitindo uma alocação mais eficiente de funções e uma equipe coesa.
+            A separação de processos é um dos pilares da otimização empresarial. Através da consultoria, os processos
+            internos são avaliados e reestruturados, resultando em maior eficiência, redução de desperdícios e aumento
+            da produtividade. Isso também leva a uma melhor alocação de recursos e foco nas atividades estratégicas.
+            O acompanhamento de faturamento e fiscalização é vital para a saúde financeira do negócio.
+            A consultoria auxilia no monitoramento das finanças, identificação de oportunidades de crescimento e análise
+            de riscos. Além disso, garante que a empresa esteja em conformidade com as regulamentações fiscais, evitando
+            possíveis penalidades. Em resumo, a consultoria oferece uma visão externa e especializada que ajuda os
+            empresários a tomar decisões mais informadas e estratégicas. Ela contribui para a maximização do potencial
+            da equipe, otimização dos processos internos e garantia de uma gestão financeira sólida.
+        </p>
+    </div>
 </body>
+
+</html>

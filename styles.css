@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.p7-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+
+.container p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h1,
+p,
+.descricao {
+    color: #800080;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 16px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .p7-logo {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .descricao {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    /* Ajustar posição da logo da empresa */
+    .p7-logo {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.dominio-logo {
+    width: 180px;
+    margin-top: 80px;
+
+}
+
+.sieg-logo {
+    width: 100px;
+    margin-top: 82px;
+}
+
+.ekontroll-logo {
+    width: 110px;
+    margin-top: 70px;
+}
+
+.superlogica-logo {
+    width: 105px;
+    margin-top: 80px;
+}
+
+.scisapp-logo {
+    width: 185px;
+    margin-top: 40px;
+}
+
+.cisassessment-logo {
+    width: 150px;
+    margin-top: 100px;
+}
+
+.excel-logo {
+    width: 138px;
+    margin-top: 72px;
+}
+
+.radar-logo {
+    width: 140px;
+    margin-top: 60px;
+}
+
+.descricao {
+    color: #800080;
+    margin-bottom: 20px;
+    margin-top: 110px;
+}
